@@ -1,0 +1,33 @@
+input, button{
+  width: 18.75rem;
+  height: 3.125rem;
+  line-height: 100%;
+  display: block;
+  padding: 0.8em 0;
+  margin: 0.8rem auto 0;
+  background: #003366;
+  color: white;
+  border: solid 1px #1f253d;
+  border-radius: 4px;
+}
+
+button.button {
+  background: #003366;
+  color: white;
+  font-size: 32px;
+  padding: 0;
+  border: 3px solid grey;
+}
+
+button.button:hover,
+button.button:focus {
+  background: #003366;
+  color: white;
+  cursor: pointer;
+}
+
+input.text {
+  text-align: center;
+  padding: 3px;
+  font-size: 32px;
+}

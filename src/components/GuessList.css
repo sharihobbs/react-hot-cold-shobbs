@@ -1,0 +1,17 @@
+ul.guessBox {
+  height: 80px;
+  margin: 10px auto 0;
+  background: #11a8ab;
+  padding: 10px;
+  display: block;
+  color: #fff;
+  overflow: auto;
+}
+ul.guessBox li {
+  display: inline;
+  background-color: #1a4e95;
+  padding: 5px;
+  border-radius: 4px;
+  margin: 3px;
+  color: #fff;
+}
