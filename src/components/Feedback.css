@@ -1,0 +1,12 @@
+#feedback {
+  margin: 0 auto;
+  background: #cc324b;
+  padding: 16px 8px;
+  font-size: 24px;
+  font-weight: 400;
+  display: block;
+  line-height: 16px;
+  color: #fff;
+  text-align: center;
+}
+

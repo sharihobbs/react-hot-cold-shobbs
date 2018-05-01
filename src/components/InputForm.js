@@ -5,7 +5,7 @@ import './InputForm.css'
 
 export default class InputForm extends React.Component {
   onSubmit(event) {
-    event.preventDefaul();
+    event.preventDefault();
 
     if (this.props.onMakeGuess) {
       const value = this.input.value;

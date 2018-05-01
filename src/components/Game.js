@@ -4,6 +4,8 @@ import Footer from './Footer';
 import InputForm from './InputForm';
 import StatusSection from './StatusSection';
 import InfoSection from './InfoSection';
+import Feedback from './Feedback';
+import GuessSection from './GuessSection';
 import './Game.css';
 
 export default class Game extends React.Component {
@@ -19,6 +21,7 @@ export default class Game extends React.Component {
   restartGame() {
     this.setState({
       guesses: [],
+      feedback: 'Guess a Number!',
       correctAnswer: Math.floor(Math.random() * 100) + 1
     });
   }
@@ -50,7 +53,6 @@ export default class Game extends React.Component {
       guesses: [...this.state.guesses, guess]
     });
 
-    document.title = feedback ? `${feedback} | Hot or Cold` : 'Hot or Cold';
   }
 
   render() {
@@ -62,7 +64,7 @@ export default class Game extends React.Component {
         <main role = 'main'>
           <h1>Hot or Cold</h1>
           <InfoSection />
-          <InputForm
+          <GuessSection
             feedback={feedback}
             guessCount={guessCount}
             onMakeGuess={guess => this.makeGuess(guess)}
@@ -70,7 +72,8 @@ export default class Game extends React.Component {
           <StatusSection guesses={guesses} />
         </main>
         <Footer
-          onRestartGame={() => this.restartGame()} />
+          onRestartGame={() => this.restartGame()}
+        />
       </div>
     );
   }
